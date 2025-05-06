@@ -1,8 +1,16 @@
 <main>
-      <header class="text-white">
-        This is a header
-      </header>
-      <section>
-        <app-home></app-home>
+    <nav class="text-white">
+      <a href="/">accueil</a>
+      |
+      <a href="/product">le produit</a>
+      |
+      <a href="/history">notre histoire</a>
+      |
+      <a href="/blog">blog</a>
+      |
+      <a href="/contact">contact</a>
+    </nav>
+      <section class="text-white">
+        <router-outlet></router-outlet>
       </section>
 </main>
