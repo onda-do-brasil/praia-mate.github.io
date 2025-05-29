@@ -10,10 +10,10 @@
     <main>
       <router-outlet></router-outlet>
     </main>
-    <footer *ngIf="!shouldHideFooter()" class="bg-green-brazil text-white h-16 flex justify-between items-center p-8">
-      <div class="font-bold m-8">Pour nous contacter, c'est par ici!</div>
-      <div class="m-8 font-thin"><a href="https://www.instagram.com/praia.mate" class="flex items-center gap-2"><i class="fab fa-instagram fa-2x"></i>&#64;praia.mate</a></div>
-      <div class="m-8 font-thin"><a class="flex items-center gap-2"><i class="fas fa-envelope fa-2x"></i>praia.matedobrasil&#64;gmail.com</a></div>
-      <div class="m-8 font-thin"><a class="flex items-center gap-2" routerLink="/mentions">mentions légales</a></div>
+    <footer *ngIf="!shouldHideFooter()" class="bg-green-brazil text-white flex flex-col lg:flex-row lg:h-16 lg:p-8 justify-between items-center p-4">
+      <div class="font-bold lg:m-8 m-4">Pour nous contacter, c'est par ici!</div>
+      <div class="lg:m-8 m-4 font-thin"><a href="https://www.instagram.com/praia.mate" class="flex items-center gap-2"><i class="fab fa-instagram fa-2x"></i>&#64;praia.mate</a></div>
+      <div class="lg:m-8 m-4 font-thin"><a class="flex items-center gap-2"><i class="fas fa-envelope fa-2x"></i>praia.matedobrasil&#64;gmail.com</a></div>
+      <div class="lg:m-8 m-4 font-thin"><a class="flex items-center gap-2" routerLink="/mentions">mentions légales</a></div>
     </footer>
 </div>
