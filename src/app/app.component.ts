@@ -11,8 +11,13 @@ import { RouterOutlet, RouterLink, Router } from '@angular/router';
 export class AppComponent {
   constructor(public router: Router) {}
   title = 'onda';
+  menuOpen = false;
 
   shouldHideFooter(): boolean {
     return '/contact' === this.router.url;
+  }
+
+  toggleMenu() {
+    this.menuOpen = !this.menuOpen;
   }
 }

@@ -1,6 +1,15 @@
 <div class="bg-background min-h-screen flex flex-col">
-    <nav class="flex items-center">
-      <a routerLink="/"><img ngSrc='/logo.svg' alt="logo" width="128" height="128"></a>
+  <div class="flex flex-row justify-between md:hidden m-4">
+    <button id="menu-toggle" class="text-green-brazil focus:outline-none p-4" (click)="toggleMenu()">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+        viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M4 6h16M4 12h16M4 18h16"></path>
+      </svg>
+    </button>
+    <a routerLink="/" class="p-4"><img ngSrc='/logo.svg' alt="logo" width="100" height="100"></a>
+  </div>
+    <nav class="flex flex-col items-center md:flex-row md:flex" [class]="menuOpen ? 'block' : 'hidden'">
+      <a routerLink="/" class="hidden md:block"><img ngSrc='/logo.svg' alt="logo" width="128" height="128"></a>
       <a routerLink="/" class="my-4 mx-8 underline underline-offset-12 hover:text-green-brazil" [class]="this.router.url == '/' ? 'font-bold text-green-brazil' : ''">accueil</a>
       <a routerLink="/product" class="my-4 mx-8 underline underline-offset-12 hover:text-green-brazil" [class]="this.router.url == '/product' ? 'font-bold text-green-brazil' : ''">le produit</a>
       <a routerLink="/history" class="my-4 mx-8 underline underline-offset-12 hover:text-green-brazil" [class]="this.router.url == '/history' ? 'font-bold text-green-brazil' : ''">notre histoire</a>
