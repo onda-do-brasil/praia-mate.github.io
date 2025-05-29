@@ -1,15 +1,20 @@
-<div class="">
-  <div class="relative w-full h-screen">
-      <img src="/background-beach.jpg" class="absolute inset-0 w-full object-scale-down"/>
-      <div class="absolute inset-0">
-        <div class="m-4">
-          <h1 class="text-green-brazil font-bold text-4xl my-2">praia</h1>
-          <h2 class="text-white font-bold text-lg mb-4">le Brésil en bouteille</h2>
-          <a class="bg-green-brazil text-white p-2 rounded-md text-sm" href="https://ulule.com/praiamate">pré-commander</a>
-        </div>
+<div class="flex flex-col">
+    <div class="h-[66vh] bg-[url(/background-beach.jpg)] bg-cover bg-center flex justify-between items-center">
+      <div class="m-4 lg:m-12 h-full">
+          <h1 class="text-green-brazil font-bold text-6xl my-4">praia</h1>
+          <h2 class="text-white font-bold text-2xl mb-12">le Brésil en bouteille</h2>
+          <div class="hidden sm:block">
+            <a class="bg-green-brazil text-white p-4 rounded-md text-xl my-4" href="https://ulule.com/praiamate">pré-commander</a>
+          </div>
+      </div>
+      <div class="h-[60vh]">
+        <img src="bottle_no_background.png" class="w-full h-full object-contain">
       </div>
   </div>
-    <div class="mx-12">
+  <div class="flex sm:hidden justify-center">
+    <a class="bg-green-brazil text-white p-4 rounded-md text-xl my-4" href="https://ulule.com/praiamate">pré-commander</a>
+  </div>
+    <div class="">
       <div class="text-center m-8">
         <h1 class="text-green-brazil font-bold">notre vision</h1>
         <p class="font-thin">praia maté incarne l'esprit libre et festif du Brésil à travers des boissons sans alcool rafraichissantes et naturelles, offrant à nos consommateurs une alternative saine et authentique pour des moments de partage et plaisir</p>
@@ -19,7 +24,7 @@
 
       <div>
         <h1 class="text-green-brazil font-bold text-center">pour une vie praia : métro, boulot, samba</h1>
-        <div class="grid grid-cols-3 justify-center text-center p-8">
+        <div class="flex flex-col lg:grid lg:grid-cols-3 gap-4 justify-center text-center p-8">
           <div class="flex flex-col items-center m-4">
             <img src="brazil.jpg" class="h-42 w-42 rounded-2xl">
             <h2 class="text-green-brazil font-bold p-1 py-2">le Brésil en bouteille</h2>
@@ -38,7 +43,6 @@
           </div>
         </div>
       </div>
-
       <hr class="bg-green-brazil mx-12 my-8"/>
 
       <div class="m-8">
