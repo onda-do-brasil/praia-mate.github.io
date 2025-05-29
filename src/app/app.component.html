@@ -1,11 +1,11 @@
 <div class="bg-background min-h-screen flex flex-col">
     <nav class="flex items-center">
       <a routerLink="/"><img ngSrc='/logo.svg' alt="logo" width="128" height="128"></a>
-      <a routerLink="/" class="my-4 mx-8 underline underline-offset-12 hover:text-green-brazil">accueil</a>
-      <a routerLink="/product" class="my-4 mx-8 underline underline-offset-12 hover:text-green-brazil">le produit</a>
-      <a routerLink="/history" class="my-4 mx-8 underline underline-offset-12 hover:text-green-brazil">notre histoire</a>
-      <!-- <a routerLink="/blog" class="my-4 mx-8 underline underline-offset-12 hover:text-green-brazil">blog</a> -->
-      <a routerLink="/contact" class="my-4 mx-8 underline underline-offset-12 hover:text-green-brazil">contact</a>
+      <a routerLink="/" class="my-4 mx-8 underline underline-offset-12 hover:text-green-brazil" [class]="this.router.url == '/' ? 'font-bold text-green-brazil' : ''">accueil</a>
+      <a routerLink="/product" class="my-4 mx-8 underline underline-offset-12 hover:text-green-brazil" [class]="this.router.url == '/product' ? 'font-bold text-green-brazil' : ''">le produit</a>
+      <a routerLink="/history" class="my-4 mx-8 underline underline-offset-12 hover:text-green-brazil" [class]="this.router.url == '/history' ? 'font-bold text-green-brazil' : ''">notre histoire</a>
+      <!-- <a routerLink="/blog" class="my-4 mx-8 underline underline-offset-12 hover:text-green-brazil" [class]="this.router.url == '/blog' ? 'font-bold text-green-brazil' : ''">blog</a> -->
+      <a routerLink="/contact" class="my-4 mx-8 underline underline-offset-12 hover:text-green-brazil" [class]="this.router.url == '/contact' ? 'font-bold text-green-brazil' : ''">contact</a>
     </nav>
     <main>
       <router-outlet></router-outlet>
