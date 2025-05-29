@@ -4,6 +4,7 @@ import { ProductComponent } from './product/product.component';
 import { HistoryComponent } from './history/history.component';
 import { BlogComponent } from './blog/blog.component';
 import { ContactComponent } from './contact/contact.component';
+import {MentionsComponent} from './mentions/mentions.component';
 
 export const routes: Routes = [
   { path: '', title: 'accueil', component: HomeComponent },
@@ -12,4 +13,5 @@ export const routes: Routes = [
   { path: 'history', title: 'notre histoire', component: HistoryComponent },
   { path: 'blog', title: 'blog', component: BlogComponent },
   { path: 'contact', title: 'contact', component: ContactComponent },
+  { path: 'mentions', title: 'mentions légales', component: MentionsComponent },
 ];

@@ -1,18 +1,19 @@
-<div class="bg-white min-h-screen flex flex-col">
+<div class="bg-background min-h-screen flex flex-col">
     <nav class="flex items-center">
-      <img ngSrc='/logo.svg' alt="logo" width="128" height="128">
-      <a routerLink="/" class="py-4 px-8 underline underline-offset-12 hover:text-green-brazil hover:font-bold">accueil</a>
-      <a routerLink="/product" class="py-4 px-8 underline underline-offset-12 hover:text-green-brazil hover:font-bold">le produit</a>
-      <a routerLink="/history" class="py-4 px-8 underline underline-offset-12 hover:text-green-brazil hover:font-bold">notre histoire</a>
-      <a routerLink="/blog" class="py-4 px-8 underline underline-offset-12 hover:text-green-brazil hover:font-bold">blog</a>
-      <a routerLink="/contact" class="py-4 px-8 underline underline-offset-12 hover:text-green-brazil hover:font-bold">contact</a>
+      <a routerLink="/"><img ngSrc='/logo.svg' alt="logo" width="128" height="128"></a>
+      <a routerLink="/" class="my-4 mx-8 underline underline-offset-12 hover:text-green-brazil">accueil</a>
+      <a routerLink="/product" class="my-4 mx-8 underline underline-offset-12 hover:text-green-brazil">le produit</a>
+      <a routerLink="/history" class="my-4 mx-8 underline underline-offset-12 hover:text-green-brazil">notre histoire</a>
+      <!-- <a routerLink="/blog" class="my-4 mx-8 underline underline-offset-12 hover:text-green-brazil">blog</a> -->
+      <a routerLink="/contact" class="my-4 mx-8 underline underline-offset-12 hover:text-green-brazil">contact</a>
     </nav>
     <main>
       <router-outlet></router-outlet>
     </main>
     <footer *ngIf="!shouldHideFooter()" class="bg-green-brazil text-white h-16 flex justify-between items-center p-8">
       <div class="font-bold m-8">Pour nous contacter, c'est par ici!</div>
-      <div class="m-8 font-thin"><a class="flex items-center gap-2"><i class="fab fa-instagram fa-2x"></i> &#64;praia.mate</a></div>
+      <div class="m-8 font-thin"><a href="https://www.instagram.com/praia.mate" class="flex items-center gap-2"><i class="fab fa-instagram fa-2x"></i>&#64;praia.mate</a></div>
       <div class="m-8 font-thin"><a class="flex items-center gap-2"><i class="fas fa-envelope fa-2x"></i>praia.matedobrasil&#64;gmail.com</a></div>
+      <div class="m-8 font-thin"><a class="flex items-center gap-2" routerLink="/mentions">mentions légales</a></div>
     </footer>
 </div>
