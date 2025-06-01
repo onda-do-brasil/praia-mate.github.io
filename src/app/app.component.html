@@ -9,12 +9,12 @@
       <a routerLink="/" class=""><img ngSrc='/logo.svg' alt="logo" width="120" height="120"></a>
     </div>
     <nav class="flex flex-col items-center md:flex-row md:flex md:m-4" [class]="menuOpen ? 'block' : 'hidden'">
-      <a routerLink="/" class="hidden md:block"><img ngSrc='/logo.svg' alt="logo" width="128" height="128"></a>
-      <a routerLink="/" class="my-4 mx-8 underline underline-offset-12 hover:text-green-brazil" [class]="this.router.url == '/' ? 'font-bold text-green-brazil' : ''">accueil</a>
-      <a routerLink="/product" class="my-4 mx-8 underline underline-offset-12 hover:text-green-brazil" [class]="this.router.url == '/product' ? 'font-bold text-green-brazil' : ''">le produit</a>
-      <a routerLink="/history" class="my-4 mx-8 underline underline-offset-12 hover:text-green-brazil" [class]="this.router.url == '/history' ? 'font-bold text-green-brazil' : ''">notre histoire</a>
-      <!-- <a routerLink="/blog" class="my-4 mx-8 underline underline-offset-12 hover:text-green-brazil" [class]="this.router.url == '/blog' ? 'font-bold text-green-brazil' : ''">blog</a> -->
-      <a routerLink="/contact" class="my-4 mx-8 underline underline-offset-12 hover:text-green-brazil" [class]="this.router.url == '/contact' ? 'font-bold text-green-brazil' : ''">contact</a>
+      <a (click)="toggleMenu()" routerLink="/" class="hidden md:block"><img ngSrc='/logo.svg' alt="logo" width="128" height="128"></a>
+      <a (click)="toggleMenu()" routerLink="/" class="my-4 mx-8 underline underline-offset-12 hover:text-green-brazil" [class]="this.router.url == '/' ? 'font-bold text-green-brazil' : ''">accueil</a>
+      <a (click)="toggleMenu()" routerLink="/product" class="my-4 mx-8 underline underline-offset-12 hover:text-green-brazil" [class]="this.router.url == '/product' ? 'font-bold text-green-brazil' : ''">le produit</a>
+      <a (click)="toggleMenu()" routerLink="/history" class="my-4 mx-8 underline underline-offset-12 hover:text-green-brazil" [class]="this.router.url == '/history' ? 'font-bold text-green-brazil' : ''">notre histoire</a>
+      <!-- <a (click)="toggleMenu()" routerLink="/blog" class="my-4 mx-8 underline underline-offset-12 hover:text-green-brazil" [class]="this.router.url == '/blog' ? 'font-bold text-green-brazil' : ''">blog</a> -->
+      <a (click)="toggleMenu()" routerLink="/contact" class="my-4 mx-8 underline underline-offset-12 hover:text-green-brazil" [class]="this.router.url == '/contact' ? 'font-bold text-green-brazil' : ''">contact</a>
     </nav>
     <main>
       <router-outlet></router-outlet>
